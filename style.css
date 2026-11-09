@@ -1,0 +1,970 @@
+
+/* ==========================================
+   1. GENERAL CSS AND BOX MODEL
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f6fa;
+    color: #263445;
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   2. HEADER SECTION
+========================================== */
+
+header {
+    background: linear-gradient(135deg, #102a43, #176b87);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #d9eaf2;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+
+/* ==========================================
+   3. NAVIGATION BAR
+========================================== */
+
+nav {
+    background-color: #102a43;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/* Navigation Hover Effect */
+
+nav a:hover {
+    background-color: #fbbf24;
+    color: #102a43;
+    transform: translateY(-4px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ==========================================
+   4. APPLICATION ANNOUNCEMENT
+========================================== */
+
+.announcement {
+    text-align: center;
+    padding: 25px 10px;
+}
+
+.announcement mark {
+    background-color: #fbbf24;
+    color: #102a43;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+/* ==========================================
+   5. MAIN CONTAINER
+========================================== */
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: 30px auto;
+}
+
+
+/* ==========================================
+   6. GENERAL SECTION DESIGN
+========================================== */
+
+section {
+    background-color: white;
+    padding: 35px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e5eaf0;
+    transition: all 0.3s ease;
+}
+
+/* Section Hover Effect */
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(16, 42, 67, 0.12);
+}
+
+section h2 {
+    color: #102a43;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+section h3 {
+    color: #176b87;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+}
+
+section p {
+    color: #526477;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* ==========================================
+   7. ABOUT US SECTION
+========================================== */
+
+#about {
+    text-align: center;
+}
+
+#about p {
+    max-width: 850px;
+    margin: 0 auto 20px;
+}
+
+#about img {
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    border-radius: 12px;
+    border: 5px solid #eaf1f6;
+    margin-top: 20px;
+}
+/* About Us Image Hover */
+
+#about img {
+    transition: all 0.4s ease;
+}
+
+#about img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ==========================================
+   8. ORGANIZATION MEMBERS
+========================================== */
+
+#members {
+    text-align: center;
+}
+
+#members h3 {
+    display: inline-block;
+    background-color: #eaf3f8;
+    color: #102a43;
+    padding: 10px 30px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+#members img {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 5px solid white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+    transition: 0.3s ease;
+}
+
+#members img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+#members p {
+    font-weight: bold;
+    color: #102a43;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+#members hr {
+    width: 70%;
+    margin: 30px auto;
+    border: none;
+    height: 1px;
+    background-color: #dce5ed;
+}
+/* Members Image Hover */
+
+#members img {
+    transition: all 0.4s ease;
+}
+
+#members img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ==========================================
+   9. RESPONSIBILITIES, MISSION AND VISION
+========================================== */
+
+#responsibilities {
+    text-align: center;
+}
+
+#responsibilities > p {
+    max-width: 850px;
+    margin: 0 auto 20px;
+}
+
+#responsibilities img {
+    width: 200px;
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+/* Mission and Vision Heading */
+
+#responsibilities h3 {
+    background-color: #eaf3f8;
+    padding: 12px;
+    border-left: 5px solid #176b87;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+
+/* ==========================================
+   10. ORGANIZATION HYMN
+========================================== */
+
+#audio {
+    text-align: center;
+}
+
+audio {
+    width: 100%;
+    max-width: 600px;
+    margin: 15px auto;
+}
+
+
+/* ==========================================
+   11. ORGANIZATION MUSE
+========================================== */
+
+#muse {
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    background-color: #102a43;
+    border-radius: 12px;
+    margin: 15px auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ==========================================
+   12. SEARCH ENGINE
+========================================== */
+
+main > h2 {
+    text-align: center;
+    color: #102a43;
+    margin: 30px 0 15px;
+}
+
+main > a {
+    display: block;
+    text-align: center;
+}
+
+main > a img {
+    width: 150px;
+    height: auto;
+    transition: 0.3s ease;
+}
+
+main > a img:hover {
+    transform: scale(1.1);
+}
+
+
+/* ==========================================
+   13. FOOTER
+========================================== */
+
+footer {
+    background-color: #102a43;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+    margin-top: 50px;
+}
+
+footer h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #d9eaf2;
+    font-size: 14px;
+}
+
+footer hr {
+    border: none;
+    height: 1px;
+    background-color: #49677f;
+    margin: 15px auto;
+    max-width: 900px;
+}
+
+
+/* ==========================================
+   14. PSEUDO-ELEMENTS
+========================================== */
+
+/* ==========================================
+   14. PSEUDO-ELEMENTS AND HOVER EFFECTS
+========================================== */
+
+/* Gold underline below section headings */
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #fbbf24;
+    margin: 10px auto 0;
+    transition: width 0.4s ease;
+}
+
+/* Underline becomes wider when hovered */
+
+section h2:hover::after {
+    width: 120px;
+}
+
+/* Application Announcement Hover */
+
+.announcement mark {
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.announcement mark:hover {
+    background-color: #102a43;
+    color: white;
+    transform: scale(1.08);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Hover */
+
+footer h3,
+footer p {
+    transition: color 0.3s ease;
+}
+
+footer h3:hover,
+footer p:hover {
+    color: #fbbf24;
+}
+/* ==========================================
+   15. RESPONSIVE DESIGN
+========================================== */
+
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 40px 15px;
+    }
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    nav {
+        position: relative;
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    section {
+        padding: 22px 15px;
+    }
+
+    section h2 {
+        font-size: 1.4rem;
+    }
+
+    #members img {
+        width: 100%;
+        height: auto;
+    }
+
+    video {
+        width: 100%;
+        height: auto;
+    }
+
+    audio {
+        width: 100%;
+    }
+}
+
+
+/* ==========================================
+   16. SMALL MOBILE SCREENS
+========================================== */
+
+@media screen and (max-width: 480px) {
+
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    header p {
+        font-size: 12px;
+    }
+
+    section {
+        padding: 18px 12px;
+    }
+
+    section h2 {
+        font-size: 1.2rem;
+    }
+
+    section p {
+        font-size: 14px;
+    }
+
+    .announcement mark {
+        font-size: 12px;
+        padding: 10px 18px;
+    }
+
+}
+/* ==========================================
+   17. ACCESSIBILITY AND INTERACTION
+========================================== */
+
+/* Hover cursor for mouse users */
+
+@media (hover: hover) and (pointer: fine) {
+
+    nav a,
+    section h2,
+    #about img,
+    #members img,
+    .announcement mark,
+    footer h3,
+    footer p {
+        cursor: pointer;
+    }
+
+}
+
+/* Respect reduced-motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+        animation: none !important;
+    }
+
+}
+
+/* ==========================================
+   18. MODERN MIDNIGHT AURORA THEME
+========================================== */
+
+/* Main Background */
+
+body {
+    background:
+        radial-gradient(circle at 10% 10%, rgba(112, 72, 180, 0.12), transparent 30%),
+        radial-gradient(circle at 90% 40%, rgba(0, 180, 190, 0.10), transparent 30%),
+        linear-gradient(135deg, #f5f3ff, #eef5ff, #f0fdfa);
+
+    color: #263248;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+
+/* ==========================================
+   MODERN HEADER
+========================================== */
+
+header {
+    background:
+        radial-gradient(circle at 15% 20%, #6554b8, transparent 40%),
+        radial-gradient(circle at 85% 80%, #087e91, transparent 45%),
+        linear-gradient(120deg, #11152f, #25245b, #123b55);
+
+    color: white;
+    padding: 85px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+header p {
+    color: #d9e8ff;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   MODERN NAVIGATION
+========================================== */
+
+nav {
+    background: rgba(17, 21, 47, 0.94);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 16px;
+    box-shadow: 0 8px 25px rgba(20, 20, 60, 0.15);
+}
+
+nav a {
+    color: #e5e7ff;
+    border-radius: 30px;
+    padding: 11px 18px;
+    transition: all 0.35s ease;
+}
+
+nav a:hover {
+    background: linear-gradient(120deg, #8b5cf6, #06b6d4);
+    color: white;
+
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(91, 92, 226, 0.35);
+}
+
+
+/* ==========================================
+   ANNOUNCEMENT DESIGN
+========================================== */
+
+.announcement mark {
+    background: linear-gradient(120deg, #8b5cf6, #06b6d4);
+    color: white;
+
+    padding: 13px 28px;
+    border-radius: 50px;
+    box-shadow: 0 6px 20px rgba(91, 92, 226, 0.25);
+}
+
+.announcement mark:hover {
+    background: linear-gradient(120deg, #06b6d4, #8b5cf6);
+    color: white;
+    transform: scale(1.08);
+}
+
+
+/* ==========================================
+   MAIN CONTENT
+========================================== */
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 45px auto;
+}
+
+
+/* ==========================================
+   MODERN SECTION CARDS
+========================================== */
+
+section {
+    background: rgba(255, 255, 255, 0.85);
+
+    border: 1px solid rgba(139, 92, 246, 0.12);
+    border-radius: 20px;
+
+    padding: 40px;
+    margin-bottom: 35px;
+
+    box-shadow: 0 10px 35px rgba(35, 35, 80, 0.07);
+
+    transition: all 0.35s ease;
+}
+
+section:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 18px 40px rgba(65, 55, 130, 0.14);
+
+    border-color: rgba(6, 182, 212, 0.35);
+}
+
+section h2 {
+    color: #292653;
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+section h2::after {
+    width: 65px;
+    height: 4px;
+
+    background: linear-gradient(90deg, #8b5cf6, #06b6d4);
+    border-radius: 10px;
+
+    transition: width 0.4s ease;
+}
+
+section h2:hover::after {
+    width: 130px;
+}
+
+section h3 {
+    color: #5141a0;
+    font-weight: 700;
+}
+
+section p {
+    color: #58657a;
+    line-height: 1.8;
+}
+
+
+/* ==========================================
+   ABOUT US IMAGE
+========================================== */
+
+#about img {
+    border: 5px solid white;
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(40, 35, 90, 0.12);
+
+    transition: all 0.4s ease;
+}
+
+#about img:hover {
+    transform: scale(1.035);
+    box-shadow: 0 15px 35px rgba(91, 92, 226, 0.25);
+}
+
+
+/* ==========================================
+   MEMBERS SECTION
+========================================== */
+
+#members h3 {
+    background: linear-gradient(120deg, #ede9fe, #cffafe);
+    color: #373078;
+
+    border: 1px solid rgba(139, 92, 246, 0.15);
+    border-radius: 30px;
+
+    padding: 12px 30px;
+}
+
+#members img {
+    border: 5px solid white;
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(30, 30, 70, 0.12);
+
+    transition: all 0.4s ease;
+}
+
+#members img:hover {
+    transform: translateY(-8px) scale(1.03);
+
+    box-shadow: 0 18px 35px rgba(91, 92, 226, 0.25);
+}
+
+#members p {
+    color: #373078;
+    font-weight: 700;
+}
+
+
+/* ==========================================
+   RESPONSIBILITIES AND MISSION
+========================================== */
+
+#responsibilities h3 {
+    background: linear-gradient(100deg, #ede9fe, #e0f7fa);
+
+    color: #373078;
+    border-left: 5px solid #8b5cf6;
+
+    border-radius: 8px;
+    padding: 15px;
+}
+
+
+/* ==========================================
+   AUDIO PLAYER
+========================================== */
+
+audio {
+    accent-color: #8b5cf6;
+}
+
+
+/* ==========================================
+   VIDEO PLAYER
+========================================== */
+
+video {
+    border: 4px solid white;
+    border-radius: 18px;
+
+    box-shadow: 0 12px 30px rgba(30, 30, 70, 0.15);
+
+    transition: all 0.3s ease;
+}
+
+video:hover {
+    box-shadow: 0 15px 35px rgba(6, 182, 212, 0.22);
+}
+
+
+/* ==========================================
+   SEARCH ENGINE
+========================================== */
+
+main > h2 {
+    color: #292653;
+    font-weight: 800;
+}
+
+main > a img {
+    transition: all 0.35s ease;
+    filter: drop-shadow(0 5px 10px rgba(40, 35, 90, 0.15));
+}
+
+main > a img:hover {
+    transform: translateY(-7px) scale(1.08);
+}
+
+
+/* ==========================================
+   MODERN FOOTER
+========================================== */
+
+footer {
+    background:
+        radial-gradient(circle at 80% 20%, #343078, transparent 40%),
+        linear-gradient(120deg, #11152f, #20204b, #123b55);
+
+    color: white;
+    padding: 50px 20px;
+
+    border-top: 4px solid transparent;
+    border-image: linear-gradient(90deg, #8b5cf6, #06b6d4) 1;
+}
+
+footer h3 {
+    color: white;
+    font-size: 1.6rem;
+}
+
+footer p {
+    color: #cbd5f5;
+}
+
+footer h3:hover,
+footer p:hover {
+    color: #67e8f9;
+}
+
+
+/* ==========================================
+   RESPONSIVE MODERN DESIGN
+========================================== */
+
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 55px 15px;
+    }
+
+    section {
+        padding: 25px 18px;
+        border-radius: 15px;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        width: 94%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    section {
+        padding: 20px 14px;
+    }
+
+}
+
+
+/* ==========================================
+   REDUCED MOTION ACCESSIBILITY
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+        animation: none !important;
+    }
+
+}
+header {
+    text-align: center;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.member-card {
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+.member-card h3 {
+    margin-bottom: 15px;
+    color: #5141a0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.member-card img {
+    width: 200px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.member-card p {
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.member-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(91, 92, 226, 0.2);
+}
+
+/* Make all member photos the same size */
+#members .member-card img {
+    width: 200px !important;
+    height: 220px !important;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+/* CENTER ORGANIZATION HYMN MUSIC */
+#hymn {
+    text-align: center;
+}
+
+#hymn audio {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 450px;
+}
